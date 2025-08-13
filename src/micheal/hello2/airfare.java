@@ -15,7 +15,7 @@ public class airfare {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int kelo , clas;
+      int kelo , clas;
          double total = 0;
          
          System.out.print("Distance(km):");
@@ -31,6 +31,11 @@ public class airfare {
              System.out.println("your input is not inputing");
              return ;
          }
+         
+         if (kelo > 1000){
+             total *= 0.9;
+         }
+         
         System.out.println(" ");
         System.out.printf("Total Fare: %.2f%n", total);     
         
